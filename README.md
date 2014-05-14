@@ -22,7 +22,7 @@ Or install it yourself as:
 
 To reference the installed CA Bundle, you can use the built-in function:
 
-```rucon
+```rubycon
 > require 'certifi'
 > Certifi.where
 => #<Pathname:/home/hone/.gems/ruby/2.1.0/ruby-certifi-14.5.14/lib/certifi/vendor/cacert.pem>
