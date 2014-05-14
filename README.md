@@ -26,4 +26,23 @@ To reference the installed CA Bundle, you can use the built-in function:
     > Certifi.where
     => #<Pathname:/home/hone/.gems/ruby/2.1.0/ruby-certifi-14.5.14/lib/certifi/vendor/cacert.pem>
 
+You can use this with `net/http` to verify the SSL certificate:
+
+```ruby
+require 'uri'
+require 'net/https'
+require 'certifi'
+
+uri  = URI.parse('https://httpbin.org/')
+http = Net::HTTP.new(uri.host, uri.port)
+http.use_ssl     = true
+http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+http.ca_file     = Certifi.where
+http.start do
+  http.request_get(uri.path) do |res|
+    puts res.body
+  end
+end
+```
+
 Enjoy!
