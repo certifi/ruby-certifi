@@ -1,3 +1,3 @@
 module Certifi
-  VERSION = "2016.08.31"
+  VERSION = "2016.09.26"
 end
