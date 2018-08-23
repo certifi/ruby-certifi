@@ -1,3 +1,4 @@
 module Certifi
-  VERSION = "2018.01.18"
+  VERSION_PATH = File.expand_path(File.join(File.dirname(__FILE__), "VERSION"))
+  VERSION      = File.read(VERSION_PATH)
 end
