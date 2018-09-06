@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
                          "lib/certifi.rb",
                          "lib/certifi/version.rb",
                          "lib/certifi/vendor/cacert.pem",
+                         "lib/certifi/VERSION",
                          "spec/certifi_spec.rb",
                          "spec/spec_helper.rb"
                        ]
