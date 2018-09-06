@@ -27,6 +27,6 @@ end
 
 task :update_version do
   File.open(Certifi::VERSION_PATH, 'w') do |f|
-    f.write(Time.now.strftime('%Y-%m-%d'))
+    f.write(Time.now.strftime('%Y.%m.%d'))
   end
 end
