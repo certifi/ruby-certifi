@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["me@kennethreitz.org", "hone02@gmail.com"]
   spec.summary       = %q{Rubygem for providing Mozilla's CA Bundle}
   spec.description   = %q{Rubygem for providing Mozilla's CA Bundle}
-  spec.homepage      = "http://certifi.io/"
+  spec.homepage      = "https://certifi.io/"
   spec.license       = "MPL2.0"
 
   spec.files         = [
