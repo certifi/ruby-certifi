@@ -5,7 +5,7 @@ require "net/http"
 describe Certifi do
   describe ".where" do
     it "should return the path to the cacert.pem" do
-      expect(File.exist?(Certifi.where)).to be_true
+      expect(File.exist?(Certifi.where)).to be true
     end
 
     it "should verify the cert" do
